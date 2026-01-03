@@ -1,0 +1,38 @@
+:root {
+    --fade-ms: 180ms;
+    --opacity: 1;
+    --top: 24pc;
+    --offset: 34px;
+    --w: 110px;
+    --h: 110px;
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: transparent;
+}
+.hidden {display: none !important;}
+
+#wrap {
+    position: absolute;
+    top: var(--top);
+    width: var(--w);
+    height: var(--h);
+    opacity: var(--opacity);
+    transition: opacity var(--fade-ms) ease;
+    pointer-events: none;
+}
+#wrap.right {right: var(--offset);}
+#wrap.left {left: var(--offset);}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.55));
+}
