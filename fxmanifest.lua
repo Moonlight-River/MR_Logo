@@ -3,7 +3,7 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 games { 'rdr3' }
 lua54 "yes"
 author 'Moonlight River'
-description 'MR_Logo - Custom HUD LOGO for (RedM - VORP)'
+description 'MR_Logo - Custom HUD LOGO'
 version '1.0.0'
 
 ui_page "html/index.html"
